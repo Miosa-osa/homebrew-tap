@@ -10,7 +10,10 @@ class Miosa < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"miosa"
+    (bin/"miosa").write <<~SH
+      #!/usr/bin/env bash
+      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/dist/bin/miosa.js" "$@"
+    SH
   end
 
   test do
