@@ -1,26 +1,26 @@
 class Miosa < Formula
   desc "Official CLI for MIOSA cloud and Forge"
   homepage "https://miosa.ai"
-  version "1.2.4"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v1.2.4/miosa_1.2.4_darwin_arm64.tar.gz"
-      sha256 "5611a799e3bd519709951bb87a56c2b659831670b007184ffe315a4d9b260f9f"
+      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v2.0.0/miosa_2.0.0_darwin_arm64.tar.gz"
+      sha256 "8ff160e74f567cbce63793d300bdaa02c071bea92a6d50b0b77ba7178217da55"
     else
-      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v1.2.4/miosa_1.2.4_darwin_amd64.tar.gz"
-      sha256 "c0fb7b7dd1fc24c059bc5d4d54edbe2e1b6339c475efa2582ad12bb3b7020c41"
+      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v2.0.0/miosa_2.0.0_darwin_amd64.tar.gz"
+      sha256 "187581bece21b92567923e7671bad5ade7a4c81a3d0a217d6c5dbef31430a769"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v1.2.4/miosa_1.2.4_linux_arm64.tar.gz"
-      sha256 "a3aca95ee05c4ab05e9f4fcb86eeb8632542c59d2a277b610e9489e27c35d243"
+      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v2.0.0/miosa_2.0.0_linux_arm64.tar.gz"
+      sha256 "ea5bd01844306835d001f69618a895eb5c2f534b5506a3584803c67360db87d2"
     else
-      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v1.2.4/miosa_1.2.4_linux_amd64.tar.gz"
-      sha256 "20003034031dae944283616bcf970bd4d78b662563dfebe7b9f6f2f63e2534a9"
+      url "https://github.com/Miosa-osa/miosa-cli-go/releases/download/v2.0.0/miosa_2.0.0_linux_amd64.tar.gz"
+      sha256 "8ab8b64d89af39ebee6f6399a3557ab56d30da5d0c8689b40829e49ce38403f2"
     end
   end
 
